@@ -10,11 +10,11 @@ interface TaskStepProps {
   step: TaskStepData;
   onStepTitleChange: (id: string, editedStepTitle: string)=> void;
   onToggleStepDone: (id: string)=> void;
-  onRemoveTaskStep: (id: string)=> void;
+  onRemoveStep: (id: string)=> void;
 }
 
 const TaskStep:React.FC<TaskStepProps> = ({
-  step, onStepTitleChange, onToggleStepDone, onRemoveTaskStep,
+  step, onStepTitleChange, onToggleStepDone, onRemoveStep,
 }) => {
   const { id, title, isDone } = step;
 
@@ -70,7 +70,7 @@ const TaskStep:React.FC<TaskStepProps> = ({
   }
 
   function handleRemoveClick():void {
-    onRemoveTaskStep(id);
+    onRemoveStep(id);
   }
 
   function handleEditClick():void {

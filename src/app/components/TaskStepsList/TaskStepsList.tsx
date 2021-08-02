@@ -12,11 +12,11 @@ interface TaskStepsProps {
   steps: TaskStepData[],
   onStepTitleChange: (id: string, editedStepTitle: string)=> void;
   onToggleStepDone: (id: string)=> void;
-  onRemoveTaskStep: (id: string)=> void;
+  onRemoveStep: (id: string)=> void;
 }
 
 const TaskStepsList: React.FC<TaskStepsProps> = ({
-  onAddTaskStep, steps, onStepTitleChange, onToggleStepDone, onRemoveTaskStep,
+  onAddTaskStep, steps, onStepTitleChange, onToggleStepDone, onRemoveStep,
 }) => (
 
   <div>
@@ -28,7 +28,7 @@ const TaskStepsList: React.FC<TaskStepsProps> = ({
             step={ step }
             onStepTitleChange={ onStepTitleChange }
             onToggleStepDone={ onToggleStepDone }
-            onRemoveTaskStep={ onRemoveTaskStep }
+            onRemoveStep={ onRemoveStep }
           />
         </li>
       )) }

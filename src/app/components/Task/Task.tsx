@@ -47,7 +47,7 @@ const Task:React.FC<TaskProps> = ({
     setStep(updatedTaskSteps);
   };
 
-  const handleRemoveTaskStep = (id: string): void => {
+  const handleRemoveStep = (id: string): void => {
     const updatedTaskSteps = [...steps.filter((step:TaskStepData) => step.id !== id)];
     setStep(updatedTaskSteps);
   };
@@ -98,7 +98,7 @@ const Task:React.FC<TaskProps> = ({
           steps={ steps }
           onStepTitleChange={ handleStepTitleChange }
           onToggleStepDone={ handleToggleStepDone }
-          onRemoveTaskStep={ handleRemoveTaskStep }
+          onRemoveStep={ handleRemoveStep }
         />
         ) }
       </div>
