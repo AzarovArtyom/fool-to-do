@@ -1,0 +1,10 @@
+.AddTask-form{}
+.AddTask-button{
+    margin-right:12px;
+    width: 40px;
+    height: 20px;
+}
+.AddTask-input{
+    font-size: 18px;
+    border-bottom: 1px solid;
+}

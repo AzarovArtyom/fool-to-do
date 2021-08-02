@@ -1,0 +1,46 @@
+.Task {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+}
+
+.Task-main {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.Task-view {
+    display: flex;
+}
+
+.Task-checkbox{
+    margin-right: 10px;
+}
+
+.Task-title {
+    display: flex;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.Task-title-done {
+    text-decoration: line-through;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.Task-actions{
+    flex-shrink: 0;
+    margin-left: auto;
+}
+
+.Task-remove-btn {
+    margin-left: 10px;
+}
+
+.Task-stepsCounter {
+    margin-left: 20px;
+}

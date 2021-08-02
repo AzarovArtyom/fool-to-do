@@ -1,0 +1,21 @@
+.Header{
+    height: 80px;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Header-logo {
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Header-login {
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+}
