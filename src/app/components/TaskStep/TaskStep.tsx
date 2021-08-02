@@ -22,7 +22,7 @@ const TaskStep:React.FC<TaskStepProps> = ({
   const [editTitle, setEditTitle] = useState<string>(title);
 
   return (
-    <div className="Task">
+    <div className="TaskStep">
       <div className="Task-main">
         <div className="Task-view">
           <div className="Task-checkbox">
